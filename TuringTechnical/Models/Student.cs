@@ -11,10 +11,12 @@ namespace TuringTechnical.Models
         [Key]
         public int ID { get; set; }
         public string Name { get; set; }
-        [DisplayFormat(DataFormatString ="{mm:dd:yyyy}")]
+        [DisplayFormat(DataFormatString ="{0:mm/dd/yyyy}")]
         public DateTime DateOfBirth { get; set; }
+        [DisplayFormat(DataFormatString = "{0:mm/dd/yyyy}")]
         public DateTime EnrollmentDate { get; set; }
         public string Email { get; set; }
-        public string PhoneNumber { get; set; }
+        [DisplayFormat(DataFormatString = "{0:###-###-####}")]
+        public long PhoneNumber { get; set; }
     }
 }

@@ -10,11 +10,12 @@ namespace TuringTechnical.Models
     {
         [Key]
         public int ID { get; set; }
-        public string CourseTitle { get; set; }
-        public string CourseDescription { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
         public int CreditHours { get; set; }
         public int MaxClassSize { get; set; }
-        public string ClassFormat { get; set; }
+        public int MinClassSize { get; set; }
 
     }
 }
+
